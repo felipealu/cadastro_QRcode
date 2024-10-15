@@ -1,0 +1,125 @@
+/* Reset básico para garantir que margens e espaçamentos sejam consistentes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(rgb(156, 179, 159), rgb(88, 97, 89));
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+/* Estilo para o contêiner principal */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 90%;
+  max-width: 400px; /* Limita a largura máxima para telas maiores */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar destaque */
+}
+
+/* Estilo do banner ou título principal */
+#banner {
+  font-size: 5vh;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Estilos para campos de entrada */
+input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #333; /* Cor de destaque ao focar */
+}
+
+/* Estilo para o botão */
+button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #557e65;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #243128; /* Efeito de hover */
+}
+
+/* Estilos para imagens */
+img {
+  margin: 30px;
+  width: 150px;
+  height: 150px;
+}
+
+/* Estilo de contêiner para centralizar o conteúdo */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#irparaleitor {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #557e65;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 24%;
+  margin-top: 20px;
+}
+
+#irparaleitor:hover {
+  background-color: #243128;
+}
+/* Responsividade para telas menores */
+@media (max-width: 480px) {
+  main {
+    padding: 15px;
+  }
+
+  input,
+  button {
+    font-size: 14px;
+  }
+
+  img {
+    width: 80px;
+    height: 80px;
+  }
+
+  #banner {
+    font-size: 4vh;
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador QRcode</title>
+
+    <link rel="stylesheet" href="/geradorQR/style2.css" />
+  </head>
+  <body>
+    <div>
+      <button id="irparaleitor">Ir para o Leitor</button>
+    </div>
+    <main>
+      <div id="banner">Teste Cadastro VMSL</div>
+
+      <div class="content">
+        <input type="text" id="nomeCompleto" placeholder="Nome Completo" />
+        <input type="text" id="ident" placeholder="Identificação" />
+        <input type="text" id="loco" placeholder="Veiculo/Placa" />
+        <div class="qrcodeContent">
+          <img id="qrcode" src="" alt="QR Code" />
+          <button id="gerar">Gerar</button>
+        </div>
+      </div>
+    </main>
+    <script src="/geradorQR/script2.js"></script>
+    <script>
+      document
+        .getElementById("irparaleitor")
+        .addEventListener("click", function () {
+          history.back();
+        });
+    </script>
+  </body>
+</html>
